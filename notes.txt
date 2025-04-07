@@ -1,4 +1,4 @@
-API Reserva de Canchas
+API Reserva de Habitaciones de Hotel
 
 - Información del cliente **
   - Nombre
@@ -8,44 +8,48 @@ API Reserva de Canchas
 
 - Reservas **
   - ID de reserva
-  - ID de cancha
-  - ID de cliente
-  - Fecha y hora de la reserva
+  - Hotel
+  - Tipo de habitación (simple, doble, suite)
+  - Número de huéspedes
+  - Fecha de inicio y fin de la reserva
   - Monto a pagar
   - Estado de la reserva (confirmada, cancelada, pagada)
 
 * ACCIONES *
-- Reservar cancha ✅
-  - Seleccionar tipo de cancha ✅
-  - Seleccionar fecha y hora (Revisar disponibilidad) ✅
-  - Ingresar información del cliente (id de quien reserva) ✅
+- Reservar habitación ✅
+  - Seleccionar hotel ✅
+  - Seleccionar tipo de habitación ✅
+  - Seleccionar fechas de inicio y fin (Revisar disponibilidad) ✅
+  - Ingresar información del cliente (ID de quien reserva) ✅
   - Confirmar reserva ✅
 
 - Consultar reservas ✅
+  - Filtrar por hotel ✅
   - Filtrar por fecha ✅
   - Filtrar por cliente ✅
   - Filtrar por estado de reserva ✅
-  - Mostrar detalles de la reserva (id de reserva, id de cancha, id de cliente, fecha y hora, monto a pagar, estado) ✅
+  - Mostrar detalles de la reserva (ID de reserva, hotel, tipo de habitación, número de huéspedes, fechas, monto a pagar, estado) ✅
 
-- Pagar reserva ✅
-  - Seleccionar reserva existente (id de reserva) ✅
-  - Ingresar información de pago (método de pago) ✅
-  - Confirmar pago ✅
+- Pagar reserva
+  - Seleccionar reserva existente (ID de reserva)
+  - Ingresar información de pago (método de pago)
+  - Confirmar pago
 
 - Cancelar reserva
-  - Seleccionar reserva existente (id de reserva)
-  - Que la persona que reserva sea la misma que cancela
+  - Seleccionar reserva existente (ID de reserva)
+  - Validar que la persona que reserva sea la misma que cancela
   - (Validar tiempo antes de la reserva para cancelación)
   - Confirmar cancelación
 
 - Editar reserva
-  - Seleccionar reserva existente (id de reserva)
-  - Modificar fecha y hora (Revisar disponibilidad)
+  - Seleccionar reserva existente (ID de reserva)
+  - Modificar fechas de inicio y fin (Revisar disponibilidad)
+  - Modificar tipo de habitación
   - Confirmar cambios
 
 - Consultar disponibilidad
-  - Seleccionar tipo de cancha
-  - Seleccionar fecha y hora
+  - Seleccionar hotel
+  - Seleccionar tipo de habitación
+  - Seleccionar fechas de inicio y fin
   - Mostrar disponibilidad (disponible, no disponible)
-  - Mostrar reservas existentes (id de reserva, id de cancha, id de cliente, fecha y hora, monto a pagar, estado)
-
+  - Mostrar reservas existentes (ID de reserva, hotel, tipo de habitación, número de huéspedes, fechas, monto a pagar, estado)

@@ -1,0 +1,30 @@
+{
+  "hotel1": {
+    "habitaciones": {
+      "simple": {
+        "precio": 50,
+        "capacidad": 1
+      },
+      "doble": {
+        "precio": 80,
+        "capacidad": 2
+      },
+      "suite": {
+        "precio": 150,
+        "capacidad": 4
+      }
+    }
+  },
+  "hotel2": {
+    "habitaciones": {
+      "doble": {
+        "precio": 90,
+        "capacidad": 2
+      },
+      "suite": {
+        "precio": 200,
+        "capacidad": 4
+      }
+    }
+  }
+}

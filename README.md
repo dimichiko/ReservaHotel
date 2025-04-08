@@ -45,12 +45,12 @@ Este proyecto es una API para gestionar reservas de habitaciones de hotel. Está
 Endpoints Principales:
 
 Reservas
-GET /reservas: Obtener todas las reservas.
-POST /reservas: Crear una nueva reserva.
-GET /reservas/:id: Obtener una reserva específica.
-PUT /reservas/:id: Actualizar una reserva existente.
-DELETE /reservas/:id: Eliminar una reserva.
-GET /reservas/buscar: Buscar reservas por criterios.
+- GET /reservas: Obtener todas las reservas.
+- POST /reservas: Crear una nueva reserva.
+- GET /reservas/:id: Obtener una reserva específica.
+- PUT /reservas/:id: Actualizar una reserva existente.
+- DELETE /reservas/:id: Eliminar una reserva.
+- GET /reservas/buscar: Buscar reservas por criterios.
 
 Ejemplo de Cuerpo para Crear una Reserva:
 ```bash
@@ -63,6 +63,8 @@ Ejemplo de Cuerpo para Crear una Reserva:
   "idCliente": "12345"
 }
 
+## Estructura del Proyecto
+```bash
 reserva-Hotel/
 ├── src/
 │   ├── controllers/       # Lógica de los endpoints
@@ -76,8 +78,8 @@ reserva-Hotel/
 └── README.md              # Documentación del proyecto
 
 
-Contribuciones
+## Contribuciones
 ¡Las contribuciones son bienvenidas! Si deseas contribuir, por favor abre un issue o envía un pull request.
 
-Licencia
+## Licencia
 Este proyecto está bajo la licencia MIT.

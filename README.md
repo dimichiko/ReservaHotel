@@ -52,7 +52,7 @@ Reservas
 - DELETE /reservas/:id: Eliminar una reserva.
 - GET /reservas/buscar: Buscar reservas por criterios.
 
-Ejemplo de Cuerpo para Crear una Reserva:
+## Ejemplo de Cuerpo para Crear una Reserva:
 ```bash
 {
   "hotel": "hotel1",

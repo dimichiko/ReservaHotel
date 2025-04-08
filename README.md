@@ -26,38 +26,24 @@ Este proyecto es una API para gestionar reservas de habitaciones de hotel. Está
    cd ReservaHotel
 
 2. instala las dependencias:
+   ```bash
    npm install
 
-3. Crea un archivo .env en la raíz del proyecto con las siguientes variables:
+4. Crea un archivo .env en la raíz del proyecto con las siguientes variables:
+   ```bash
    PORT=3000
 
-4. Inicia el servidor:
+5. Inicia el servidor:
+   ```bash
    npm start
 
-5. Accede a la documentación Swagger en:
+6. Accede a la documentación Swagger en:
+   
    http://localhost:3000/api-docs
+   
 
+Endpoints Principales:
 
-
-GitHub Copilot
-Here’s a basic README.md template for your project:
-
-Instala las dependencias:
-
-npm install
-Crea un archivo .env en la raíz del proyecto con las siguientes variables:
-
-PORT=3000
-Inicia el servidor:
-
-npm start
-O en modo desarrollo:
-
-Accede a la documentación Swagger en:
-http://localhost:3000/api-docs
-
-
-Endpoints Principales
 Reservas
 GET /reservas: Obtener todas las reservas.
 POST /reservas: Crear una nueva reserva.
@@ -67,7 +53,7 @@ DELETE /reservas/:id: Eliminar una reserva.
 GET /reservas/buscar: Buscar reservas por criterios.
 
 Ejemplo de Cuerpo para Crear una Reserva:
-
+```bash
 {
   "hotel": "hotel1",
   "tipoHabitacion": "doble",

@@ -42,7 +42,7 @@ Este proyecto es una API para gestionar reservas de habitaciones de hotel. Está
    http://localhost:3000/api-docs
    
 
-Endpoints Principales:
+## Endpoints Principales:
 
 Reservas
 - GET /reservas: Obtener todas las reservas.
@@ -63,8 +63,6 @@ Reservas
   "idCliente": "12345"
 }
 
-## Estructura del Proyecto
-```bash
 reserva-Hotel/
 ├── src/
 │   ├── controllers/       # Lógica de los endpoints

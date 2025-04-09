@@ -1,8 +1,7 @@
-const { v4: uuidv4 } = require('uuid'); // Asegúrate de tener uuid instalado
-const reservas = []; // Aquí se almacenarán las reservas temporalmente
-const hotelesDisponibles = require('../data/habitaciones-disponibles.json'); // Asegúrate de tener este archivo
+const { v4: uuidv4 } = require('uuid');
+const reservas = []; 
+const hotelesDisponibles = require('../data/habitaciones-disponibles.json'); 
 
-// Crear una reserva
 const crearReserva = (req, res) => {
   const { hotel, tipoHabitacion, huespedes, fechaInicio, fechaFin, idCliente } = req.body;
 
@@ -36,12 +35,10 @@ const crearReserva = (req, res) => {
   res.status(201).send('Reserva creada exitosamente');
 };
 
-// Obtener todas las reservas
 const obtenerReservas = (req, res) => {
   res.status(200).json(reservas);
 };
 
-// Obtener una reserva específica por ID
 const obtenerReservaPorId = (req, res) => {
   const { id } = req.params;
   const reserva = reservas.find((r) => r.id === id);
@@ -53,7 +50,6 @@ const obtenerReservaPorId = (req, res) => {
   res.status(200).json(reserva);
 };
 
-// Actualizar una reserva
 const actualizarReserva = (req, res) => {
   const { id } = req.params;
   const { hotel, tipoHabitacion, huespedes, fechaInicio, fechaFin, idCliente, estado } = req.body;
@@ -75,7 +71,6 @@ const actualizarReserva = (req, res) => {
   res.status(200).send('Reserva actualizada exitosamente');
 };
 
-// Eliminar una reserva
 const eliminarReserva = (req, res) => {
   const { id } = req.params;
   const index = reservas.findIndex((r) => r.id === id);
@@ -88,7 +83,6 @@ const eliminarReserva = (req, res) => {
   res.status(200).send('Reserva eliminada exitosamente');
 };
 
-// Buscar reservas por criterios
 const buscarReservas = (req, res) => {
   const { hotel, tipoHabitacion, estado, huespedes, fechaInicio, fechaFin } = req.query;
 

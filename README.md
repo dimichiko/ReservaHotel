@@ -52,6 +52,9 @@ Reservas
 - DELETE /reservas/:id: Eliminar una reserva.
 - GET /reservas/buscar: Buscar reservas por criterios.
 
+## Render
+https://reserva-hotel-prod.onrender.com
+
 ## Ejemplo de Cuerpo para Crear una Reserva:
 ```bash
 {

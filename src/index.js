@@ -29,3 +29,4 @@ app.listen(port, () => {
   console.log(`Servidor escuchando en el puerto ${port}`);
   console.log(`Documentación disponible en http://localhost:${port}/api-docs`);
 });
+
